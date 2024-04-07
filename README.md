@@ -1,16 +1,12 @@
-# flutterregistrationscreen
+# Tela de Cadastro
 
-A new Flutter project.
+Exercício Avaliativo 2 - Montagem de uma GUI
 
-## Getting Started
+Trabalho da disciplina Desenvolvimento Multiplataforma 1 da Especialização em Desenvolvimento de
+Sistemas para Dispositivos Móveis - IFSP.
 
-This project is a starting point for a Flutter application.
+## Esperado
 
-A few resources to get you started if this is your first Flutter project:
+![Enunciado](images/enunciado_flutter.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Resultado
