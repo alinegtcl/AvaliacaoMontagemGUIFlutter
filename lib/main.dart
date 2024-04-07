@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterregistrationscreen/registration/registration_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,21 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const RegistrationPage(title: 'Exercício Montagem GUI'),
+      home: RegistrationPage(title: 'Exercício Montagem GUI'),
     );
   }
-}
-
-class RegistrationPage extends StatelessWidget {
-  final String title;
-
-  const RegistrationPage({super.key, required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
-  }
-
-
 }
