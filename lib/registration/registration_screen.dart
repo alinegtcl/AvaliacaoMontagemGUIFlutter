@@ -15,7 +15,7 @@ class RegistrationPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           title,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         ),
         backgroundColor: Colors.blue,
       ),
@@ -24,59 +24,63 @@ class RegistrationPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Text(
-              'Tela de Cadastro',
+            const Text(
+              'TELA DE CADASTRO',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 16.0),
-            Text(
+            const SizedBox(height: 16.0),
+            const Text(
               'NOME:',
               style: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.normal,
               ),
             ),
+            const SizedBox(height: 8.0),
             TextField(
               controller: nameController,
-              decoration: InputDecoration(
-                labelText: 'Nome',
+              decoration: const InputDecoration(
+                labelText: 'Digite o nome',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 16.0),
-            Text(
+            const SizedBox(height: 16.0),
+            const Text(
               'ENDEREÇO:',
               style: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.normal,
               ),
             ),
+            const SizedBox(height: 8.0),
             TextField(
               controller: addressController,
-              decoration: InputDecoration(
-                labelText: 'Endereço',
+              decoration: const InputDecoration(
+                labelText: 'Digite o endereço',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 16.0),
-            Text(
+            const SizedBox(height: 16.0),
+            const Text(
               'eMAIL:',
               style: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.normal,
               ),
             ),
+            const SizedBox(height: 8.0),
             TextField(
               controller: emailController,
-              decoration: InputDecoration(
-                labelText: 'Email',
+              decoration: const InputDecoration(
+                labelText: 'Digite o email',
                 border: OutlineInputBorder(),
               ),
             ),
             Container(
+              margin: const EdgeInsets.only(left: 100.0, top: 16.0),
               child: Row(
                 children: [
                   Expanded(
@@ -94,8 +98,8 @@ class RegistrationPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      child: Text(
-                        'Cancelar',
+                      child: const Text(
+                        'CANCELAR',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 15.0,
@@ -119,8 +123,8 @@ class RegistrationPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      child: Text(
-                        'Salvar',
+                      child: const Text(
+                        'SALVAR',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 15.0,
@@ -130,7 +134,7 @@ class RegistrationPage extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
