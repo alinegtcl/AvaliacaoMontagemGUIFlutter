@@ -87,7 +87,7 @@ class RegistrationPage extends StatelessWidget {
                     Expanded(
                       child: ElevatedButton(
                         onPressed: () {
-                          // adicionar mensagem
+                          _showAlert(context, "Clicou no botão cancelar");
                         },
                         style: ButtonStyle(
                           backgroundColor:
@@ -108,11 +108,14 @@ class RegistrationPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(width: 12.0),
+                    const SizedBox(width: 16.0),
                     Expanded(
                       child: ElevatedButton(
                         onPressed: () {
-                          // adicionar mensagem
+                          String data =
+                              "\nNome: ${nameController.text} \nEndereço: ${addressController.text}\nEmail: ${emailController.text}";
+
+                          _showAlert(context, "Clicou para salvar $data");
                         },
                         style: ButtonStyle(
                           backgroundColor:
@@ -140,6 +143,26 @@ class RegistrationPage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  void _showAlert(BuildContext context, String message) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Alerta'),
+          content: Text(message),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('OK'),
+            ),
+          ],
+        );
+      },
     );
   }
 }
