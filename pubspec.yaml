@@ -62,6 +62,9 @@ flutter:
   assets:
     #   - images/a_dot_burr.jpeg
     - images/enunciado_flutter.png
+    - images/tela_cadastro_dialog.png
+    - images/tela_cadastro_preenchida.png
+    - images/tela_cadastro_vazia.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
