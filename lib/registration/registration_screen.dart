@@ -21,121 +21,123 @@ class RegistrationPage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            const Text(
-              'TELA DE CADASTRO',
-              style: TextStyle(
-                fontSize: 24.0,
-                fontWeight: FontWeight.bold,
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              const Text(
+                'TELA DE CADASTRO',
+                style: TextStyle(
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            const SizedBox(height: 16.0),
-            const Text(
-              'NOME:',
-              style: TextStyle(
-                fontSize: 16.0,
-                fontWeight: FontWeight.normal,
+              const SizedBox(height: 16.0),
+              const Text(
+                'NOME:',
+                style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.normal,
+                ),
               ),
-            ),
-            const SizedBox(height: 8.0),
-            TextField(
-              controller: nameController,
-              decoration: const InputDecoration(
-                labelText: 'Digite o nome',
-                border: OutlineInputBorder(),
+              const SizedBox(height: 8.0),
+              TextField(
+                controller: nameController,
+                decoration: const InputDecoration(
+                  labelText: 'Digite o nome',
+                  border: OutlineInputBorder(),
+                ),
               ),
-            ),
-            const SizedBox(height: 16.0),
-            const Text(
-              'ENDEREÇO:',
-              style: TextStyle(
-                fontSize: 16.0,
-                fontWeight: FontWeight.normal,
+              const SizedBox(height: 16.0),
+              const Text(
+                'ENDEREÇO:',
+                style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.normal,
+                ),
               ),
-            ),
-            const SizedBox(height: 8.0),
-            TextField(
-              controller: addressController,
-              decoration: const InputDecoration(
-                labelText: 'Digite o endereço',
-                border: OutlineInputBorder(),
+              const SizedBox(height: 8.0),
+              TextField(
+                controller: addressController,
+                decoration: const InputDecoration(
+                  labelText: 'Digite o endereço',
+                  border: OutlineInputBorder(),
+                ),
               ),
-            ),
-            const SizedBox(height: 16.0),
-            const Text(
-              'eMAIL:',
-              style: TextStyle(
-                fontSize: 16.0,
-                fontWeight: FontWeight.normal,
+              const SizedBox(height: 16.0),
+              const Text(
+                'eMAIL:',
+                style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.normal,
+                ),
               ),
-            ),
-            const SizedBox(height: 8.0),
-            TextField(
-              controller: emailController,
-              decoration: const InputDecoration(
-                labelText: 'Digite o email',
-                border: OutlineInputBorder(),
+              const SizedBox(height: 8.0),
+              TextField(
+                controller: emailController,
+                decoration: const InputDecoration(
+                  labelText: 'Digite o email',
+                  border: OutlineInputBorder(),
+                ),
               ),
-            ),
-            Container(
-              margin: const EdgeInsets.only(left: 100.0, top: 16.0),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed: () {
-                        // adicionar mensagem
-                      },
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.blue),
-                        shape: MaterialStateProperty.all<OutlinedBorder>(
-                          const RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(4.0)),
+              Container(
+                margin: const EdgeInsets.only(left: 100.0, top: 16.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          // adicionar mensagem
+                        },
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                          shape: MaterialStateProperty.all<OutlinedBorder>(
+                            const RoundedRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(4.0)),
+                            ),
+                          ),
+                        ),
+                        child: const Text(
+                          'CANCELAR',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15.0,
                           ),
                         ),
                       ),
-                      child: const Text(
-                        'CANCELAR',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15.0,
-                        ),
-                      ),
                     ),
-                  ),
-                  SizedBox(width: 12.0),
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed: () {
-                        // adicionar mensagem
-                      },
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.blue),
-                        shape: MaterialStateProperty.all<OutlinedBorder>(
-                          const RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(4.0)),
+                    SizedBox(width: 12.0),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          // adicionar mensagem
+                        },
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.blue),
+                          shape: MaterialStateProperty.all<OutlinedBorder>(
+                            const RoundedRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(4.0)),
+                            ),
+                          ),
+                        ),
+                        child: const Text(
+                          'SALVAR',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15.0,
                           ),
                         ),
                       ),
-                      child: const Text(
-                        'SALVAR',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15.0,
-                        ),
-                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
